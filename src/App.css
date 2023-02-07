@@ -1,38 +1,100 @@
-.App {
+
+header {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__content {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  padding: 0 5% 0 5%;
+}
+
+.header__logo img {
+  width: 80%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+
+}
+
+.header__info-company a {
+  color: #fb9a1d;
+}
+
+.header__info-company p {
+  margin: 0;
+  color: #fb9a1d;
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__phone a {
+  color: #333;
+}
+
+.header__login a {
+  font-size: 30px;
+}
+
+.main__container {
+  z-index: 11;
+  width: 500px;
+  padding: 5%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.form__button {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  /* background-image: url(./images/bg.jpg); */
+
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+}
+
+/* @media screen and (max-width: 1030px) {
+  .header__phone {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 820px) {
+  .header__login {
+    display: none;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .header__info {
+    display: none;
+  }
+} */
